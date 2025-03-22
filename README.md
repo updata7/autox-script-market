@@ -11,9 +11,22 @@
 
 ### 运行截图
 
-![主页界面](images/home.png)
-
-![超市界面](images/market.png)
+<div align="center">
+  <table>
+    <tr>
+      <td align="center" width="50%">
+        <img src="images/home.png" alt="主页界面" width="400"/>
+        <br>
+        <em>主页界面</em>
+      </td>
+      <td align="center" width="50%">
+        <img src="images/market.png" alt="超市界面" width="400"/>
+        <br>
+        <em>超市界面</em>
+      </td>
+    </tr>
+  </table>
+</div>
 
 ### 获取脚本列表，服务器返回的数据结构，可以参考这个文件
 app/src/main/java/org/autojs/autojs/net/BaseBean.kt
