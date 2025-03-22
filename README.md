@@ -4,6 +4,22 @@
 
 ## 简介
 
+### 脚本超市
+- 原AutoX.js 6.6.6版本修改而来
+- 删掉一些定时任务等高级功能，只留脚本运行功能
+- 添加超市板块，开发者可以通过后台上传脚本，用户通过App下载自己需要的脚本
+
+### 运行截图
+
+![主页界面](images/home.png)
+
+![超市界面](images/market.png)
+
+### 获取脚本列表，服务器返回的数据结构，可以参考这个文件
+app/src/main/java/org/autojs/autojs/net/BaseBean.kt
+
+
+## 原文档内容
 一个支持无障碍服务的Android平台上的JavaScript 运行环境 和 开发环境，其发展目标是类似JsBox和Workflow。
 
 ~~由于[原作者](https://github.com/hyb1996) 不再维护 Auto.js 项目
@@ -122,7 +138,7 @@
 #### 使用本产品或autojs 产品是否可以商用?
 
 * 本产品 能不能商用，取决于 原来autojs，因为目前很多功能和代码版权归autojs 所有。
-* autojs 能不能商用,取决于你对于附带的 “ **非商业性使用** ” 的理解和其法律效益。
+* autojs 能不能商用,取决于你对于附带的 " **非商业性使用** " 的理解和其法律效益。
 * 反正本产品不会拿autojs 进行商用。
 
 ### 编译相关：
@@ -164,8 +180,5 @@
 
 再点击 Android Studio 菜单 "Build" -> "Generate Signed Bundle /APK..." -> 勾选"APK" -> "Next" -> 选择或新建证书 -> "Next" -> 选择"v6Release" -> "Finish"
 生成的APK文件，在 app/v6/release 下
-
-##### 获取脚本列表，服务器返回的数据结构，可以参考这个文件
-app/src/main/java/org/autojs/autojs/net/BaseBean.kt
 
 
