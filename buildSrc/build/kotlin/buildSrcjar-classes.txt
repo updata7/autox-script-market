@@ -1,0 +1,1 @@
+/Users/chenk/Documents/code/Android/AutoX/buildSrc/build/classes/kotlin/main/VersionKt.class:/Users/chenk/Documents/code/Android/AutoX/buildSrc/build/classes/kotlin/main/Versions.class

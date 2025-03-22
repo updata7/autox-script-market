@@ -1,0 +1,972 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<issues format="6" by="lint 8.4.2" type="baseline" client="gradle" dependencies="false" name="AGP (8.4.2)" variant="all" version="8.4.2">
+
+    <issue
+        id="ResourceName"
+        message="Resource named &apos;`app_name`&apos; does not start with the project&apos;s resource prefix &apos;`apkbuilder_`&apos;; rename to &apos;`apkbuilder_app_name`&apos; ?"
+        errorLine1="    &lt;string name=&quot;app_name&quot;>ApkBuilder&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="2"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="DefaultLocale"
+        message="Implicitly using the default locale is a common source of bugs: Use `String.format(Locale, ...)` instead"
+        errorLine1="                        String.format(&quot;Config flags size > %d, but exceeding bytes are all zero, so it should be ok.&quot;,"
+        errorLine2="                        ^">
+        <location
+            file="src/main/java/zhao/arsceditor/ResDecoder/ARSCDecoder.java"
+            line="424"
+            column="25"/>
+    </issue>
+
+    <issue
+        id="DefaultLocale"
+        message="Implicitly using the default locale is a common source of bugs: Use `String.format(Locale, ...)` instead"
+        errorLine1="                LOGGER.warning(String.format(&quot;Config flags size > %d. Exceeding bytes: 0x%X.&quot;, KNOWN_CONFIG_BYTES,"
+        errorLine2="                               ^">
+        <location
+            file="src/main/java/zhao/arsceditor/ResDecoder/ARSCDecoder.java"
+            line="427"
+            column="32"/>
+    </issue>
+
+    <issue
+        id="DefaultLocale"
+        message="Implicitly using the default locale is a common source of bugs: Use `String.format(Locale, ...)` instead"
+        errorLine1="            LOGGER.info(String.format(&quot;Decoding Shared Library (%s), pkgId: %d&quot;, packageName, packageId));"
+        errorLine2="                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/zhao/arsceditor/ResDecoder/ARSCDecoder.java"
+            line="492"
+            column="25"/>
+    </issue>
+
+    <issue
+        id="DefaultLocale"
+        message="Implicitly using the default locale is a common source of bugs: Use `String.format(Locale, ...)` instead"
+        errorLine1="            System.out.println(String.format(&quot;  Package %d id=%d name=%s typeCount=%d&quot;, x, pkg.id, pkg.name,"
+        errorLine2="                               ^">
+        <location
+            file="src/main/java/pxb/android/arsc/ArscDumper.java"
+            line="35"
+            column="32"/>
+    </issue>
+
+    <issue
+        id="DefaultLocale"
+        message="Implicitly using the default locale is a common source of bugs: Use `String.format(Locale, ...)` instead"
+        errorLine1="                System.out.println(String.format(&quot;    type %d %s&quot;, type.id - 1, type.name));"
+        errorLine2="                                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/pxb/android/arsc/ArscDumper.java"
+            line="38"
+            column="36"/>
+    </issue>
+
+    <issue
+        id="DefaultLocale"
+        message="Implicitly using the default locale is a common source of bugs: Use `String.format(Locale, ...)` instead"
+        errorLine1="                    ns.prefix = new StringItem(String.format(&quot;axml_auto_%02d&quot;, a++));"
+        errorLine2="                                               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/pxb/android/axml/AxmlWriter.java"
+            line="105"
+            column="48"/>
+    </issue>
+
+    <issue
+        id="DefaultLocale"
+        message="Implicitly using the default locale is a common source of bugs: Use `String.format(Locale, ...)` instead"
+        errorLine1="   ret.append(&quot;-mcc&quot;).append(String.format(&quot;%03d&quot;, mcc));"
+        errorLine2="                             ~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/zhao/arsceditor/ResDecoder/data/ResConfigFlags.java"
+            line="304"
+            column="30"/>
+    </issue>
+
+    <issue
+        id="DefaultLocale"
+        message="Implicitly using the default locale is a common source of bugs: Use `String.format(Locale, ...)` instead"
+        errorLine1="       ret.append(String.format(&quot;%02d&quot;, mnc));"
+        errorLine2="                  ~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/zhao/arsceditor/ResDecoder/data/ResConfigFlags.java"
+            line="310"
+            column="19"/>
+    </issue>
+
+    <issue
+        id="DefaultLocale"
+        message="Implicitly using the default locale is a common source of bugs: Use `String.format(Locale, ...)` instead"
+        errorLine1="       ret.append(String.format(&quot;%03d&quot;, mnc));"
+        errorLine2="                  ~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/zhao/arsceditor/ResDecoder/data/ResConfigFlags.java"
+            line="312"
+            column="19"/>
+    </issue>
+
+    <issue
+        id="DefaultLocale"
+        message="Implicitly using the default locale is a common source of bugs: Use `String.format(Locale, ...)` instead"
+        errorLine1="    ret.append(String.format(&quot;-%dx%d&quot;, screenWidth, screenHeight));"
+        errorLine2="               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/zhao/arsceditor/ResDecoder/data/ResConfigFlags.java"
+            line="516"
+            column="16"/>
+    </issue>
+
+    <issue
+        id="DefaultLocale"
+        message="Implicitly using the default locale is a common source of bugs: Use `String.format(Locale, ...)` instead"
+        errorLine1="    ret.append(String.format(&quot;-%dx%d&quot;, screenHeight, screenWidth));"
+        errorLine2="               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/zhao/arsceditor/ResDecoder/data/ResConfigFlags.java"
+            line="518"
+            column="16"/>
+    </issue>
+
+    <issue
+        id="DefaultLocale"
+        message="Implicitly using the default locale is a common source of bugs: Use `String.format(Locale, ...)` instead"
+        errorLine1="        return String.format(&quot;S%04d %s&quot;, index, data);"
+        errorLine2="               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/pxb/android/StringItem.java"
+            line="66"
+            column="16"/>
+    </issue>
+
+    <issue
+        id="AndroidGradlePluginVersion"
+        message="A newer version of com.android.application than 8.4.2 is available: 8.9.0"
+        errorLine1="androidGradlePlugin = &quot;8.4.2&quot;"
+        errorLine2="                      ~~~~~~~">
+        <location
+            file="$HOME/Documents/code/Android/AutoX/gradle/libs.versions.toml"
+            line="2"
+            column="23"/>
+    </issue>
+
+    <issue
+        id="AndroidGradlePluginVersion"
+        message="A newer version of com.android.application than 8.4.2 is available: 8.9.0"
+        errorLine1="androidGradlePlugin = &quot;8.4.2&quot;"
+        errorLine2="                      ~~~~~~~">
+        <location
+            file="$HOME/Documents/code/Android/AutoX/gradle/libs.versions.toml"
+            line="2"
+            column="23"/>
+    </issue>
+
+    <issue
+        id="AndroidGradlePluginVersion"
+        message="A newer version of com.android.application than 8.4.2 is available: 8.9.0"
+        errorLine1="androidGradlePlugin = &quot;8.4.2&quot;"
+        errorLine2="                      ~~~~~~~">
+        <location
+            file="$HOME/Documents/code/Android/AutoX/gradle/libs.versions.toml"
+            line="2"
+            column="23"/>
+    </issue>
+
+    <issue
+        id="AndroidGradlePluginVersion"
+        message="A newer version of com.android.library than 8.4.2 is available: 8.9.0"
+        errorLine1="androidGradlePlugin = &quot;8.4.2&quot;"
+        errorLine2="                      ~~~~~~~">
+        <location
+            file="$HOME/Documents/code/Android/AutoX/gradle/libs.versions.toml"
+            line="2"
+            column="23"/>
+    </issue>
+
+    <issue
+        id="AndroidGradlePluginVersion"
+        message="A newer version of com.android.library than 8.4.2 is available: 8.9.0"
+        errorLine1="androidGradlePlugin = &quot;8.4.2&quot;"
+        errorLine2="                      ~~~~~~~">
+        <location
+            file="$HOME/Documents/code/Android/AutoX/gradle/libs.versions.toml"
+            line="2"
+            column="23"/>
+    </issue>
+
+    <issue
+        id="AndroidGradlePluginVersion"
+        message="A newer version of com.android.library than 8.4.2 is available: 8.9.0"
+        errorLine1="androidGradlePlugin = &quot;8.4.2&quot;"
+        errorLine2="                      ~~~~~~~">
+        <location
+            file="$HOME/Documents/code/Android/AutoX/gradle/libs.versions.toml"
+            line="2"
+            column="23"/>
+    </issue>
+
+    <issue
+        id="AndroidGradlePluginVersion"
+        message="A newer version of com.android.tools.build:gradle than 8.4.2 is available: 8.9.0"
+        errorLine1="androidGradlePlugin = &quot;8.4.2&quot;"
+        errorLine2="                      ~~~~~~~">
+        <location
+            file="$HOME/Documents/code/Android/AutoX/gradle/libs.versions.toml"
+            line="2"
+            column="23"/>
+    </issue>
+
+    <issue
+        id="AndroidGradlePluginVersion"
+        message="A newer version of com.android.tools.build:gradle than 8.4.2 is available: 8.9.0"
+        errorLine1="androidGradlePlugin = &quot;8.4.2&quot;"
+        errorLine2="                      ~~~~~~~">
+        <location
+            file="$HOME/Documents/code/Android/AutoX/gradle/libs.versions.toml"
+            line="2"
+            column="23"/>
+    </issue>
+
+    <issue
+        id="AndroidGradlePluginVersion"
+        message="A newer version of com.android.tools.build:gradle than 8.4.2 is available: 8.9.0"
+        errorLine1="androidGradlePlugin = &quot;8.4.2&quot;"
+        errorLine2="                      ~~~~~~~">
+        <location
+            file="$HOME/Documents/code/Android/AutoX/gradle/libs.versions.toml"
+            line="2"
+            column="23"/>
+    </issue>
+
+    <issue
+        id="GradleDependency"
+        message="A newer version of com.android.tools:common than 31.5.2 is available: 31.9.0"
+        errorLine1="androidTools = &quot;31.5.2&quot;"
+        errorLine2="               ~~~~~~~~">
+        <location
+            file="$HOME/Documents/code/Android/AutoX/gradle/libs.versions.toml"
+            line="3"
+            column="16"/>
+    </issue>
+
+    <issue
+        id="GradleDependency"
+        message="A newer version of com.android.tools:common than 31.5.2 is available: 31.9.0"
+        errorLine1="androidTools = &quot;31.5.2&quot;"
+        errorLine2="               ~~~~~~~~">
+        <location
+            file="$HOME/Documents/code/Android/AutoX/gradle/libs.versions.toml"
+            line="3"
+            column="16"/>
+    </issue>
+
+    <issue
+        id="GradleDependency"
+        message="A newer version of com.android.tools:common than 31.5.2 is available: 31.9.0"
+        errorLine1="androidTools = &quot;31.5.2&quot;"
+        errorLine2="               ~~~~~~~~">
+        <location
+            file="$HOME/Documents/code/Android/AutoX/gradle/libs.versions.toml"
+            line="3"
+            column="16"/>
+    </issue>
+
+    <issue
+        id="GradleDependency"
+        message="A newer version of androidx.collection:collection than 1.4.3 is available: 1.5.0"
+        errorLine1="androidxCollection = &quot;1.4.3&quot;"
+        errorLine2="                     ~~~~~~~">
+        <location
+            file="$HOME/Documents/code/Android/AutoX/gradle/libs.versions.toml"
+            line="5"
+            column="22"/>
+    </issue>
+
+    <issue
+        id="GradleDependency"
+        message="A newer version of androidx.collection:collection than 1.4.3 is available: 1.5.0"
+        errorLine1="androidxCollection = &quot;1.4.3&quot;"
+        errorLine2="                     ~~~~~~~">
+        <location
+            file="$HOME/Documents/code/Android/AutoX/gradle/libs.versions.toml"
+            line="5"
+            column="22"/>
+    </issue>
+
+    <issue
+        id="GradleDependency"
+        message="A newer version of androidx.collection:collection than 1.4.3 is available: 1.5.0"
+        errorLine1="androidxCollection = &quot;1.4.3&quot;"
+        errorLine2="                     ~~~~~~~">
+        <location
+            file="$HOME/Documents/code/Android/AutoX/gradle/libs.versions.toml"
+            line="5"
+            column="22"/>
+    </issue>
+
+    <issue
+        id="GradleDependency"
+        message="A newer version of androidx.webkit:webkit than 1.11.0 is available: 1.13.0"
+        errorLine1="androidxWebkit = &quot;1.11.0&quot;"
+        errorLine2="                 ~~~~~~~~">
+        <location
+            file="$HOME/Documents/code/Android/AutoX/gradle/libs.versions.toml"
+            line="9"
+            column="18"/>
+    </issue>
+
+    <issue
+        id="GradleDependency"
+        message="A newer version of androidx.webkit:webkit than 1.11.0 is available: 1.13.0"
+        errorLine1="androidxWebkit = &quot;1.11.0&quot;"
+        errorLine2="                 ~~~~~~~~">
+        <location
+            file="$HOME/Documents/code/Android/AutoX/gradle/libs.versions.toml"
+            line="9"
+            column="18"/>
+    </issue>
+
+    <issue
+        id="GradleDependency"
+        message="A newer version of androidx.webkit:webkit than 1.11.0 is available: 1.13.0"
+        errorLine1="androidxWebkit = &quot;1.11.0&quot;"
+        errorLine2="                 ~~~~~~~~">
+        <location
+            file="$HOME/Documents/code/Android/AutoX/gradle/libs.versions.toml"
+            line="9"
+            column="18"/>
+    </issue>
+
+    <issue
+        id="GradleDependency"
+        message="A newer version of androidx.activity:activity-ktx than 1.9.1 is available: 1.10.1"
+        errorLine1="androidxActivity = &quot;1.9.1&quot;"
+        errorLine2="                   ~~~~~~~">
+        <location
+            file="$HOME/Documents/code/Android/AutoX/gradle/libs.versions.toml"
+            line="11"
+            column="20"/>
+    </issue>
+
+    <issue
+        id="GradleDependency"
+        message="A newer version of androidx.activity:activity-ktx than 1.9.1 is available: 1.10.1"
+        errorLine1="androidxActivity = &quot;1.9.1&quot;"
+        errorLine2="                   ~~~~~~~">
+        <location
+            file="$HOME/Documents/code/Android/AutoX/gradle/libs.versions.toml"
+            line="11"
+            column="20"/>
+    </issue>
+
+    <issue
+        id="GradleDependency"
+        message="A newer version of androidx.activity:activity-ktx than 1.9.1 is available: 1.10.1"
+        errorLine1="androidxActivity = &quot;1.9.1&quot;"
+        errorLine2="                   ~~~~~~~">
+        <location
+            file="$HOME/Documents/code/Android/AutoX/gradle/libs.versions.toml"
+            line="11"
+            column="20"/>
+    </issue>
+
+    <issue
+        id="GradleDependency"
+        message="A newer version of androidx.annotation:annotation than 1.8.2 is available: 1.9.1"
+        errorLine1="androidxAnnotation = &quot;1.8.2&quot;"
+        errorLine2="                     ~~~~~~~">
+        <location
+            file="$HOME/Documents/code/Android/AutoX/gradle/libs.versions.toml"
+            line="12"
+            column="22"/>
+    </issue>
+
+    <issue
+        id="GradleDependency"
+        message="A newer version of androidx.annotation:annotation than 1.8.2 is available: 1.9.1"
+        errorLine1="androidxAnnotation = &quot;1.8.2&quot;"
+        errorLine2="                     ~~~~~~~">
+        <location
+            file="$HOME/Documents/code/Android/AutoX/gradle/libs.versions.toml"
+            line="12"
+            column="22"/>
+    </issue>
+
+    <issue
+        id="GradleDependency"
+        message="A newer version of androidx.annotation:annotation than 1.8.2 is available: 1.9.1"
+        errorLine1="androidxAnnotation = &quot;1.8.2&quot;"
+        errorLine2="                     ~~~~~~~">
+        <location
+            file="$HOME/Documents/code/Android/AutoX/gradle/libs.versions.toml"
+            line="12"
+            column="22"/>
+    </issue>
+
+    <issue
+        id="GradleDependency"
+        message="A newer version of androidx.activity:activity-compose than 1.9.1 is available: 1.10.1"
+        errorLine1="activity-compose = &quot;1.9.1&quot;"
+        errorLine2="                   ~~~~~~~">
+        <location
+            file="$HOME/Documents/code/Android/AutoX/gradle/libs.versions.toml"
+            line="15"
+            column="20"/>
+    </issue>
+
+    <issue
+        id="GradleDependency"
+        message="A newer version of androidx.activity:activity-compose than 1.9.1 is available: 1.10.1"
+        errorLine1="activity-compose = &quot;1.9.1&quot;"
+        errorLine2="                   ~~~~~~~">
+        <location
+            file="$HOME/Documents/code/Android/AutoX/gradle/libs.versions.toml"
+            line="15"
+            column="20"/>
+    </issue>
+
+    <issue
+        id="GradleDependency"
+        message="A newer version of androidx.activity:activity-compose than 1.9.1 is available: 1.10.1"
+        errorLine1="activity-compose = &quot;1.9.1&quot;"
+        errorLine2="                   ~~~~~~~">
+        <location
+            file="$HOME/Documents/code/Android/AutoX/gradle/libs.versions.toml"
+            line="15"
+            column="20"/>
+    </issue>
+
+    <issue
+        id="GradleDependency"
+        message="A newer version of androidx.core:core-ktx than 1.13.1 is available: 1.15.0"
+        errorLine1="core-ktx = &quot;1.13.1&quot;"
+        errorLine2="           ~~~~~~~~">
+        <location
+            file="$HOME/Documents/code/Android/AutoX/gradle/libs.versions.toml"
+            line="30"
+            column="12"/>
+    </issue>
+
+    <issue
+        id="GradleDependency"
+        message="A newer version of androidx.core:core-ktx than 1.13.1 is available: 1.15.0"
+        errorLine1="core-ktx = &quot;1.13.1&quot;"
+        errorLine2="           ~~~~~~~~">
+        <location
+            file="$HOME/Documents/code/Android/AutoX/gradle/libs.versions.toml"
+            line="30"
+            column="12"/>
+    </issue>
+
+    <issue
+        id="GradleDependency"
+        message="A newer version of androidx.core:core-ktx than 1.13.1 is available: 1.15.0"
+        errorLine1="core-ktx = &quot;1.13.1&quot;"
+        errorLine2="           ~~~~~~~~">
+        <location
+            file="$HOME/Documents/code/Android/AutoX/gradle/libs.versions.toml"
+            line="30"
+            column="12"/>
+    </issue>
+
+    <issue
+        id="GradleDependency"
+        message="A newer version of com.afollestad.material-dialogs:core than 0.9.2.3 is available: 0.9.6.0"
+        errorLine1="core-version = &quot;0.9.2.3&quot;"
+        errorLine2="               ~~~~~~~~~">
+        <location
+            file="$HOME/Documents/code/Android/AutoX/gradle/libs.versions.toml"
+            line="31"
+            column="16"/>
+    </issue>
+
+    <issue
+        id="GradleDependency"
+        message="A newer version of com.afollestad.material-dialogs:core than 0.9.2.3 is available: 0.9.6.0"
+        errorLine1="core-version = &quot;0.9.2.3&quot;"
+        errorLine2="               ~~~~~~~~~">
+        <location
+            file="$HOME/Documents/code/Android/AutoX/gradle/libs.versions.toml"
+            line="31"
+            column="16"/>
+    </issue>
+
+    <issue
+        id="GradleDependency"
+        message="A newer version of com.afollestad.material-dialogs:core than 0.9.2.3 is available: 0.9.6.0"
+        errorLine1="core-version = &quot;0.9.2.3&quot;"
+        errorLine2="               ~~~~~~~~~">
+        <location
+            file="$HOME/Documents/code/Android/AutoX/gradle/libs.versions.toml"
+            line="31"
+            column="16"/>
+    </issue>
+
+    <issue
+        id="GradleDependency"
+        message="A newer version of androidx.lifecycle:lifecycle-compiler than 2.8.4 is available: 2.8.7"
+        errorLine1="androidxLifecycle = &quot;2.8.4&quot;"
+        errorLine2="                    ~~~~~~~">
+        <location
+            file="$HOME/Documents/code/Android/AutoX/gradle/libs.versions.toml"
+            line="42"
+            column="21"/>
+    </issue>
+
+    <issue
+        id="GradleDependency"
+        message="A newer version of androidx.lifecycle:lifecycle-compiler than 2.8.4 is available: 2.8.7"
+        errorLine1="androidxLifecycle = &quot;2.8.4&quot;"
+        errorLine2="                    ~~~~~~~">
+        <location
+            file="$HOME/Documents/code/Android/AutoX/gradle/libs.versions.toml"
+            line="42"
+            column="21"/>
+    </issue>
+
+    <issue
+        id="GradleDependency"
+        message="A newer version of androidx.lifecycle:lifecycle-compiler than 2.8.4 is available: 2.8.7"
+        errorLine1="androidxLifecycle = &quot;2.8.4&quot;"
+        errorLine2="                    ~~~~~~~">
+        <location
+            file="$HOME/Documents/code/Android/AutoX/gradle/libs.versions.toml"
+            line="42"
+            column="21"/>
+    </issue>
+
+    <issue
+        id="GradleDependency"
+        message="A newer version of androidx.lifecycle:lifecycle-livedata-ktx than 2.8.4 is available: 2.8.7"
+        errorLine1="androidxLifecycle = &quot;2.8.4&quot;"
+        errorLine2="                    ~~~~~~~">
+        <location
+            file="$HOME/Documents/code/Android/AutoX/gradle/libs.versions.toml"
+            line="42"
+            column="21"/>
+    </issue>
+
+    <issue
+        id="GradleDependency"
+        message="A newer version of androidx.lifecycle:lifecycle-livedata-ktx than 2.8.4 is available: 2.8.7"
+        errorLine1="androidxLifecycle = &quot;2.8.4&quot;"
+        errorLine2="                    ~~~~~~~">
+        <location
+            file="$HOME/Documents/code/Android/AutoX/gradle/libs.versions.toml"
+            line="42"
+            column="21"/>
+    </issue>
+
+    <issue
+        id="GradleDependency"
+        message="A newer version of androidx.lifecycle:lifecycle-livedata-ktx than 2.8.4 is available: 2.8.7"
+        errorLine1="androidxLifecycle = &quot;2.8.4&quot;"
+        errorLine2="                    ~~~~~~~">
+        <location
+            file="$HOME/Documents/code/Android/AutoX/gradle/libs.versions.toml"
+            line="42"
+            column="21"/>
+    </issue>
+
+    <issue
+        id="GradleDependency"
+        message="A newer version of androidx.lifecycle:lifecycle-runtime-compose than 2.8.4 is available: 2.8.7"
+        errorLine1="androidxLifecycle = &quot;2.8.4&quot;"
+        errorLine2="                    ~~~~~~~">
+        <location
+            file="$HOME/Documents/code/Android/AutoX/gradle/libs.versions.toml"
+            line="42"
+            column="21"/>
+    </issue>
+
+    <issue
+        id="GradleDependency"
+        message="A newer version of androidx.lifecycle:lifecycle-runtime-compose than 2.8.4 is available: 2.8.7"
+        errorLine1="androidxLifecycle = &quot;2.8.4&quot;"
+        errorLine2="                    ~~~~~~~">
+        <location
+            file="$HOME/Documents/code/Android/AutoX/gradle/libs.versions.toml"
+            line="42"
+            column="21"/>
+    </issue>
+
+    <issue
+        id="GradleDependency"
+        message="A newer version of androidx.lifecycle:lifecycle-runtime-compose than 2.8.4 is available: 2.8.7"
+        errorLine1="androidxLifecycle = &quot;2.8.4&quot;"
+        errorLine2="                    ~~~~~~~">
+        <location
+            file="$HOME/Documents/code/Android/AutoX/gradle/libs.versions.toml"
+            line="42"
+            column="21"/>
+    </issue>
+
+    <issue
+        id="GradleDependency"
+        message="A newer version of androidx.lifecycle:lifecycle-runtime-ktx than 2.8.4 is available: 2.8.7"
+        errorLine1="androidxLifecycle = &quot;2.8.4&quot;"
+        errorLine2="                    ~~~~~~~">
+        <location
+            file="$HOME/Documents/code/Android/AutoX/gradle/libs.versions.toml"
+            line="42"
+            column="21"/>
+    </issue>
+
+    <issue
+        id="GradleDependency"
+        message="A newer version of androidx.lifecycle:lifecycle-runtime-ktx than 2.8.4 is available: 2.8.7"
+        errorLine1="androidxLifecycle = &quot;2.8.4&quot;"
+        errorLine2="                    ~~~~~~~">
+        <location
+            file="$HOME/Documents/code/Android/AutoX/gradle/libs.versions.toml"
+            line="42"
+            column="21"/>
+    </issue>
+
+    <issue
+        id="GradleDependency"
+        message="A newer version of androidx.lifecycle:lifecycle-runtime-ktx than 2.8.4 is available: 2.8.7"
+        errorLine1="androidxLifecycle = &quot;2.8.4&quot;"
+        errorLine2="                    ~~~~~~~">
+        <location
+            file="$HOME/Documents/code/Android/AutoX/gradle/libs.versions.toml"
+            line="42"
+            column="21"/>
+    </issue>
+
+    <issue
+        id="GradleDependency"
+        message="A newer version of androidx.lifecycle:lifecycle-service than 2.8.4 is available: 2.8.7"
+        errorLine1="androidxLifecycle = &quot;2.8.4&quot;"
+        errorLine2="                    ~~~~~~~">
+        <location
+            file="$HOME/Documents/code/Android/AutoX/gradle/libs.versions.toml"
+            line="42"
+            column="21"/>
+    </issue>
+
+    <issue
+        id="GradleDependency"
+        message="A newer version of androidx.lifecycle:lifecycle-service than 2.8.4 is available: 2.8.7"
+        errorLine1="androidxLifecycle = &quot;2.8.4&quot;"
+        errorLine2="                    ~~~~~~~">
+        <location
+            file="$HOME/Documents/code/Android/AutoX/gradle/libs.versions.toml"
+            line="42"
+            column="21"/>
+    </issue>
+
+    <issue
+        id="GradleDependency"
+        message="A newer version of androidx.lifecycle:lifecycle-service than 2.8.4 is available: 2.8.7"
+        errorLine1="androidxLifecycle = &quot;2.8.4&quot;"
+        errorLine2="                    ~~~~~~~">
+        <location
+            file="$HOME/Documents/code/Android/AutoX/gradle/libs.versions.toml"
+            line="42"
+            column="21"/>
+    </issue>
+
+    <issue
+        id="GradleDependency"
+        message="A newer version of androidx.lifecycle:lifecycle-viewmodel-compose than 2.8.4 is available: 2.8.7"
+        errorLine1="androidxLifecycle = &quot;2.8.4&quot;"
+        errorLine2="                    ~~~~~~~">
+        <location
+            file="$HOME/Documents/code/Android/AutoX/gradle/libs.versions.toml"
+            line="42"
+            column="21"/>
+    </issue>
+
+    <issue
+        id="GradleDependency"
+        message="A newer version of androidx.lifecycle:lifecycle-viewmodel-compose than 2.8.4 is available: 2.8.7"
+        errorLine1="androidxLifecycle = &quot;2.8.4&quot;"
+        errorLine2="                    ~~~~~~~">
+        <location
+            file="$HOME/Documents/code/Android/AutoX/gradle/libs.versions.toml"
+            line="42"
+            column="21"/>
+    </issue>
+
+    <issue
+        id="GradleDependency"
+        message="A newer version of androidx.lifecycle:lifecycle-viewmodel-compose than 2.8.4 is available: 2.8.7"
+        errorLine1="androidxLifecycle = &quot;2.8.4&quot;"
+        errorLine2="                    ~~~~~~~">
+        <location
+            file="$HOME/Documents/code/Android/AutoX/gradle/libs.versions.toml"
+            line="42"
+            column="21"/>
+    </issue>
+
+    <issue
+        id="GradleDependency"
+        message="A newer version of androidx.lifecycle:lifecycle-viewmodel-ktx than 2.8.4 is available: 2.8.7"
+        errorLine1="androidxLifecycle = &quot;2.8.4&quot;"
+        errorLine2="                    ~~~~~~~">
+        <location
+            file="$HOME/Documents/code/Android/AutoX/gradle/libs.versions.toml"
+            line="42"
+            column="21"/>
+    </issue>
+
+    <issue
+        id="GradleDependency"
+        message="A newer version of androidx.lifecycle:lifecycle-viewmodel-ktx than 2.8.4 is available: 2.8.7"
+        errorLine1="androidxLifecycle = &quot;2.8.4&quot;"
+        errorLine2="                    ~~~~~~~">
+        <location
+            file="$HOME/Documents/code/Android/AutoX/gradle/libs.versions.toml"
+            line="42"
+            column="21"/>
+    </issue>
+
+    <issue
+        id="GradleDependency"
+        message="A newer version of androidx.lifecycle:lifecycle-viewmodel-ktx than 2.8.4 is available: 2.8.7"
+        errorLine1="androidxLifecycle = &quot;2.8.4&quot;"
+        errorLine2="                    ~~~~~~~">
+        <location
+            file="$HOME/Documents/code/Android/AutoX/gradle/libs.versions.toml"
+            line="42"
+            column="21"/>
+    </issue>
+
+    <issue
+        id="GradleDependency"
+        message="A newer version of androidx.lifecycle:lifecycle-viewmodel-savedstate than 2.8.4 is available: 2.8.7"
+        errorLine1="androidxLifecycle = &quot;2.8.4&quot;"
+        errorLine2="                    ~~~~~~~">
+        <location
+            file="$HOME/Documents/code/Android/AutoX/gradle/libs.versions.toml"
+            line="42"
+            column="21"/>
+    </issue>
+
+    <issue
+        id="GradleDependency"
+        message="A newer version of androidx.lifecycle:lifecycle-viewmodel-savedstate than 2.8.4 is available: 2.8.7"
+        errorLine1="androidxLifecycle = &quot;2.8.4&quot;"
+        errorLine2="                    ~~~~~~~">
+        <location
+            file="$HOME/Documents/code/Android/AutoX/gradle/libs.versions.toml"
+            line="42"
+            column="21"/>
+    </issue>
+
+    <issue
+        id="GradleDependency"
+        message="A newer version of androidx.lifecycle:lifecycle-viewmodel-savedstate than 2.8.4 is available: 2.8.7"
+        errorLine1="androidxLifecycle = &quot;2.8.4&quot;"
+        errorLine2="                    ~~~~~~~">
+        <location
+            file="$HOME/Documents/code/Android/AutoX/gradle/libs.versions.toml"
+            line="42"
+            column="21"/>
+    </issue>
+
+    <issue
+        id="GradleDependency"
+        message="A newer version of androidx.compose:compose-bom than 2024.06.00 is available: 2025.03.00"
+        errorLine1="androidxComposeBom = &quot;2024.06.00&quot;"
+        errorLine2="                     ~~~~~~~~~~~~">
+        <location
+            file="$HOME/Documents/code/Android/AutoX/gradle/libs.versions.toml"
+            line="65"
+            column="22"/>
+    </issue>
+
+    <issue
+        id="GradleDependency"
+        message="A newer version of androidx.compose:compose-bom than 2024.06.00 is available: 2025.03.00"
+        errorLine1="androidxComposeBom = &quot;2024.06.00&quot;"
+        errorLine2="                     ~~~~~~~~~~~~">
+        <location
+            file="$HOME/Documents/code/Android/AutoX/gradle/libs.versions.toml"
+            line="65"
+            column="22"/>
+    </issue>
+
+    <issue
+        id="GradleDependency"
+        message="A newer version of androidx.compose:compose-bom than 2024.06.00 is available: 2025.03.00"
+        errorLine1="androidxComposeBom = &quot;2024.06.00&quot;"
+        errorLine2="                     ~~~~~~~~~~~~">
+        <location
+            file="$HOME/Documents/code/Android/AutoX/gradle/libs.versions.toml"
+            line="65"
+            column="22"/>
+    </issue>
+
+    <issue
+        id="GradleDependency"
+        message="A newer version of androidx.work:work-runtime than 2.9.0 is available: 2.10.0"
+        errorLine1="work-runtime-version = &quot;2.9.0&quot;"
+        errorLine2="                       ~~~~~~~">
+        <location
+            file="$HOME/Documents/code/Android/AutoX/gradle/libs.versions.toml"
+            line="75"
+            column="24"/>
+    </issue>
+
+    <issue
+        id="GradleDependency"
+        message="A newer version of androidx.work:work-runtime than 2.9.0 is available: 2.10.0"
+        errorLine1="work-runtime-version = &quot;2.9.0&quot;"
+        errorLine2="                       ~~~~~~~">
+        <location
+            file="$HOME/Documents/code/Android/AutoX/gradle/libs.versions.toml"
+            line="75"
+            column="24"/>
+    </issue>
+
+    <issue
+        id="GradleDependency"
+        message="A newer version of androidx.work:work-runtime than 2.9.0 is available: 2.10.0"
+        errorLine1="work-runtime-version = &quot;2.9.0&quot;"
+        errorLine2="                       ~~~~~~~">
+        <location
+            file="$HOME/Documents/code/Android/AutoX/gradle/libs.versions.toml"
+            line="75"
+            column="24"/>
+    </issue>
+
+    <issue
+        id="GradleDependency"
+        message="A newer version of androidx.compose.ui:ui-test-junit4 than 1.7.0-beta07 is available: 1.7.8"
+        errorLine1="androidx-compose-ui-test-junit4 = { module = &quot;androidx.compose.ui:ui-test-junit4&quot;, version = &quot;1.7.0-beta07&quot; }"
+        errorLine2="                                                                                             ~~~~~~~~~~~~~~">
+        <location
+            file="$HOME/Documents/code/Android/AutoX/gradle/libs.versions.toml"
+            line="139"
+            column="94"/>
+    </issue>
+
+    <issue
+        id="GradleDependency"
+        message="A newer version of androidx.compose.ui:ui-test-junit4 than 1.7.0-beta07 is available: 1.7.8"
+        errorLine1="androidx-compose-ui-test-junit4 = { module = &quot;androidx.compose.ui:ui-test-junit4&quot;, version = &quot;1.7.0-beta07&quot; }"
+        errorLine2="                                                                                             ~~~~~~~~~~~~~~">
+        <location
+            file="$HOME/Documents/code/Android/AutoX/gradle/libs.versions.toml"
+            line="139"
+            column="94"/>
+    </issue>
+
+    <issue
+        id="GradleDependency"
+        message="A newer version of androidx.compose.ui:ui-test-junit4 than 1.7.0-beta07 is available: 1.7.8"
+        errorLine1="androidx-compose-ui-test-junit4 = { module = &quot;androidx.compose.ui:ui-test-junit4&quot;, version = &quot;1.7.0-beta07&quot; }"
+        errorLine2="                                                                                             ~~~~~~~~~~~~~~">
+        <location
+            file="$HOME/Documents/code/Android/AutoX/gradle/libs.versions.toml"
+            line="139"
+            column="94"/>
+    </issue>
+
+    <issue
+        id="GradleDependency"
+        message="A newer version of androidx.compose.material:material than 1.7.0-beta07 is available: 1.7.8"
+        errorLine1="androidx-compose-material = { module = &quot;androidx.compose.material:material&quot;, version = &quot;1.7.0-beta07&quot; }"
+        errorLine2="                                                                                       ~~~~~~~~~~~~~~">
+        <location
+            file="$HOME/Documents/code/Android/AutoX/gradle/libs.versions.toml"
+            line="141"
+            column="88"/>
+    </issue>
+
+    <issue
+        id="GradleDependency"
+        message="A newer version of androidx.compose.material:material than 1.7.0-beta07 is available: 1.7.8"
+        errorLine1="androidx-compose-material = { module = &quot;androidx.compose.material:material&quot;, version = &quot;1.7.0-beta07&quot; }"
+        errorLine2="                                                                                       ~~~~~~~~~~~~~~">
+        <location
+            file="$HOME/Documents/code/Android/AutoX/gradle/libs.versions.toml"
+            line="141"
+            column="88"/>
+    </issue>
+
+    <issue
+        id="GradleDependency"
+        message="A newer version of androidx.compose.material:material than 1.7.0-beta07 is available: 1.7.8"
+        errorLine1="androidx-compose-material = { module = &quot;androidx.compose.material:material&quot;, version = &quot;1.7.0-beta07&quot; }"
+        errorLine2="                                                                                       ~~~~~~~~~~~~~~">
+        <location
+            file="$HOME/Documents/code/Android/AutoX/gradle/libs.versions.toml"
+            line="141"
+            column="88"/>
+    </issue>
+
+    <issue
+        id="GradleDependency"
+        message="A newer version of androidx.constraintlayout:constraintlayout than 2.1.4 is available: 2.2.1"
+        errorLine1="androidx-constraintlayout = { group = &quot;androidx.constraintlayout&quot;, name = &quot;constraintlayout&quot;, version = &quot;2.1.4&quot; }"
+        errorLine2="                                                                                                        ~~~~~~~">
+        <location
+            file="$HOME/Documents/code/Android/AutoX/gradle/libs.versions.toml"
+            line="204"
+            column="105"/>
+    </issue>
+
+    <issue
+        id="GradleDependency"
+        message="A newer version of androidx.constraintlayout:constraintlayout than 2.1.4 is available: 2.2.1"
+        errorLine1="androidx-constraintlayout = { group = &quot;androidx.constraintlayout&quot;, name = &quot;constraintlayout&quot;, version = &quot;2.1.4&quot; }"
+        errorLine2="                                                                                                        ~~~~~~~">
+        <location
+            file="$HOME/Documents/code/Android/AutoX/gradle/libs.versions.toml"
+            line="204"
+            column="105"/>
+    </issue>
+
+    <issue
+        id="GradleDependency"
+        message="A newer version of androidx.constraintlayout:constraintlayout than 2.1.4 is available: 2.2.1"
+        errorLine1="androidx-constraintlayout = { group = &quot;androidx.constraintlayout&quot;, name = &quot;constraintlayout&quot;, version = &quot;2.1.4&quot; }"
+        errorLine2="                                                                                                        ~~~~~~~">
+        <location
+            file="$HOME/Documents/code/Android/AutoX/gradle/libs.versions.toml"
+            line="204"
+            column="105"/>
+    </issue>
+
+    <issue
+        id="PlaySdkIndexNonCompliant"
+        message="com.tencent.bugly:crashreport version 4.0.0 has Device and Network Abuse policy issues that will block publishing of your app to Play Console in the future"
+        errorLine1="crashreport-version = &quot;4.0.0&quot;"
+        errorLine2="                      ~~~~~~~">
+        <location
+            file="$HOME/Documents/code/Android/AutoX/gradle/libs.versions.toml"
+            line="32"
+            column="23"/>
+    </issue>
+
+    <issue
+        id="PlaySdkIndexNonCompliant"
+        message="com.tencent.bugly:crashreport version 4.0.0 has Device and Network Abuse policy issues that will block publishing of your app to Play Console in the future"
+        errorLine1="crashreport-version = &quot;4.0.0&quot;"
+        errorLine2="                      ~~~~~~~">
+        <location
+            file="$HOME/Documents/code/Android/AutoX/gradle/libs.versions.toml"
+            line="32"
+            column="23"/>
+    </issue>
+
+    <issue
+        id="PlaySdkIndexNonCompliant"
+        message="com.tencent.bugly:crashreport version 4.0.0 has Device and Network Abuse policy issues that will block publishing of your app to Play Console in the future"
+        errorLine1="crashreport-version = &quot;4.0.0&quot;"
+        errorLine2="                      ~~~~~~~">
+        <location
+            file="$HOME/Documents/code/Android/AutoX/gradle/libs.versions.toml"
+            line="32"
+            column="23"/>
+    </issue>
+
+</issues>
