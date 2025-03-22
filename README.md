@@ -164,3 +164,8 @@
 
 再点击 Android Studio 菜单 "Build" -> "Generate Signed Bundle /APK..." -> 勾选"APK" -> "Next" -> 选择或新建证书 -> "Next" -> 选择"v6Release" -> "Finish"
 生成的APK文件，在 app/v6/release 下
+
+##### 获取脚本列表，服务器返回的数据结构，可以参考这个文件
+app/src/main/java/org/autojs/autojs/net/BaseBean.kt
+
+
